@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "Mission_Improbable_1.0" `
+  -ModName "Mission Improbable 1.0" `
+  -ModFolder "missionimprobable" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/mission-improbable/Mission-Improbable-1.0-Original.zip" `
+  -ModBaseFilesUrlHash "a9e430e300183544c22aad3e452333852c4ce7aa1b181bcc482ad2c91c0ab2de" `
+  -ModReadmePath "README.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
